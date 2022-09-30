@@ -355,10 +355,6 @@ footer {
                 text-align: center;
                 margin: 1% auto;
                 }
-        .container-fluid{
-                padding-left: 5%;
-                background-color: aqua;
-                }
         .section1 {
                 flex-direction: column;
                 width: 100%;
@@ -429,11 +425,6 @@ footer {
                         text-align: center;
                         margin: 1% auto;
                 }
-                .container-fluid{
-                        padding-left:-5%;
-                        background-color: aqua;
-                        }
-
                 .section1 {
                         flex-direction: column;
                         width: 100%;
