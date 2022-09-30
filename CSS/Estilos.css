@@ -279,12 +279,18 @@ footer {
         padding-top:1vh;
         justify-content: center;
         align-items: center;
-        padding-left: 10vw;
 }
 .navbar-brand {
         font-size: 0.9rem;
-        padding-left: 2vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
 }
+.navbar-nav {
+        margin:0 auto;
+}
+        
 /*celular*/
 @media screen and (max-width:768px){
         .header_logo{
@@ -348,6 +354,10 @@ footer {
         .navbar-nav {
                 text-align: center;
                 margin: 1% auto;
+                }
+        .container-fluid{
+                padding-left: 5%;
+                background-color: aqua;
                 }
         .section1 {
                 flex-direction: column;
@@ -419,6 +429,10 @@ footer {
                         text-align: center;
                         margin: 1% auto;
                 }
+                .container-fluid{
+                        padding-left:-5%;
+                        background-color: aqua;
+                        }
 
                 .section1 {
                         flex-direction: column;
