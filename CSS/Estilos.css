@@ -309,6 +309,9 @@ footer {
         justify-content: center;
         align-items: center;
 }
+footer :hover {
+        color:rgb(60, 238, 25)
+}
 .navbar-brand {
         font-size: 0.9rem;
         padding-top: 1vh;
