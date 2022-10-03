@@ -26,8 +26,8 @@
                 </nav>
             </div>
         </header> 
-        <main> <!-- Hecho en Flex-->
-           <section class="sectionPrincipal">
+        <main> <!-- Sin Carrusel en Flex-->
+           <!-- <section class="sectionPrincipal">
                    <div class="contenidoPrincipal">
 
                     <h2>Conf Bs As</h2>
@@ -36,7 +36,57 @@
                     <button class="bt_green"><a class="decoration" href=""> <span class="col_white">Comprar tickets</span></a></button>
                 </div>
 
-            </section>
+            </section> -->
+ 
+            <!-- con Carrousel en Boostrap-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Images/ba1.jpg" class="d-block w-100 img-fluid " style="filter: brightness(55%); -webkit-filter: brightness(55%);-moz-filter: brightness(55%)"alt="Omagen BA1">
+                    <div class="carousel-caption d-none d-md-block contenidoPrincipal">
+                        <h2>Conf Bs As</h2>
+                        <p class="parrafoPrincipal">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <button class="bt_transp"><a class="decoration" href="./Pages/Contacto.html"><span class="col_white">Quiero ser Orador</span></a></button>
+                        <button class="bt_green"><a class="decoration" href=""> <span class="col_white">Comprar tickets</span></a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/ba2.jpg" class="d-block w-100 img-fluid" style="filter: brightness(55%); -webkit-filter: brightness(55%);-moz-filter: brightness(55%)" alt="Imagen BA2">
+                    <div class="carousel-caption d-none d-md-block contenidoPrincipal">
+                        <h2>Conf Bs As</h2>
+                        <p class="parrafoPrincipal">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <button class="bt_transp"><a class="decoration" href="./Pages/Contacto.html"><span class="col_white">Quiero ser Orador</span></a></button>
+                        <button class="bt_green"><a class="decoration" href=""> <span class="col_white">Comprar tickets</span></a></button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/ba3.jpg" class="d-block w-100 img-fluid" style="filter: brightness(55%); -webkit-filter: brightness(55%);-moz-filter: brightness(55%)" alt="Imagen BA3">
+                    <div class="carousel-caption d-none d-md-block contenidoPrincipal">
+                        <h2>Conf Bs As</h2>
+                        <p class="parrafoPrincipal">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <button class="bt_transp"><a class="decoration" href="./Pages/Contacto.html"><span class="col_white">Quiero ser Orador</span></a></button>
+                        <button class="bt_green"><a class="decoration" href=""> <span class="col_white">Comprar tickets</span></a></button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+
             <div class="content">
                 <p>CONOCE A LOS</p><h2>ORADORES</h2>
             </div>
@@ -93,7 +143,7 @@
         </div>
     </section>
 
-    <section class="section2">     <!-- El formulario heccho en CSS-->
+    <section class="section2">     <!-- El formulario hecho en CSS-->
         <p>CONVIERTE EN UN</p>
         <br>
         <h2>ORADOR</h2>

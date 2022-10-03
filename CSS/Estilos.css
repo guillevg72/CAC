@@ -67,7 +67,7 @@ nav :hover {
         color:rgb(255, 255, 255);
         padding-left: 1vw;
 }
-.sectionPrincipal{
+/*.sectionPrincipal{
                 background:linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)),url(../images/ba1.jpg);
                 height:100vh;
                 width: 100%;
@@ -77,34 +77,53 @@ nav :hover {
                 background-size:cover;
                 background-position: center;
                 padding-right: 5vw;
-}
+}*/
 .contenidoPrincipal{
-                width: 60%;
+               /* width: 60%;
                 text-align: right;
                 color:white;
                 background-color: transparent;
                 padding-right: 5%;
                 padding-bottom: 5%;
-                margin-top: 15%;
+                margin-top: 15%;*/
+                width: 100%;
+                text-align: right;
+                color:white;
+                background-color:transparent;
+                padding-right: 1%;
+                padding-bottom: 5%;
+                margin-top: 5%;
+                margin-bottom: 10%;
+                margin-left: -20vw;
 }
+.contenidoPrincipal h2 {
+                padding-right: 4%;
+
+}
+
 .parrafoPrincipal {
-                width: 85%;
+                /*width: 85%;
                 padding-right: 0px;
                 background-color: transparent;
-                margin-left: 15%;
+                margin-left: 15%;*/
+                width: 45%;
+                padding-right: 1%;
+                background-color: transparent;
+                margin-left: 52vw;
 }
 .bt_transp {
                 background-color:transparent;
                 border-color: white; 
                 border-radius: 10px; 
-                width: 25%; 
-                height: 8vh;
+                width: 16%; 
+                height: 7vh;
                 font-family:Arial, Helvetica, sans-serif;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 font-weight: bold;
                 padding-left: 5px;
                 padding-right: 5px;
                 margin-right: 1vw;
+                margin-top: 4%;
 }
 .bt_transp:hover{
                 background-color:grey;
@@ -114,13 +133,15 @@ nav :hover {
                 background-color:rgb(6, 190, 6);
                 border-color: rgb(6,190,6);
                 border-radius: 10px; 
-                width: 25%; 
-                height: 8vh;
+                width: 16%; 
+                height: 7vh;
                 padding-left: 5px;
                 padding-right: 5px;
                 font-family:Arial, Helvetica, sans-serif;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 font-weight: bold;
+                margin-right: 5%;
+                margin-top: 4%;
 }
 .bt_green:hover{
         background-color:grey;
@@ -324,7 +345,7 @@ footer :hover {
 }
         
 /*celular*/
-@media screen and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:768px){
         .header_logo{
                   flex-direction: column;
                   
@@ -353,24 +374,55 @@ footer :hover {
                 }
                 
         .contenidoPrincipal{
-                width: 100%;
+               /* width: 100%;
                 text-align: justify;
                 padding-bottom: 5%;
+                margin-top: 15%;*/
+                width: 100%;
+                padding-bottom: 2%;
                 margin-top: 15%;
+                background-color: transparent;
+                text-align: justify;
+                margin-bottom: 1vh;
+                height: auto;
+                padding-left: 15%;
+
                 }   
         .contenidoPrincipal h2{ 
                 text-align: center;
                 padding-left: 10%;
+                font-size: 1rem;
                 }
+
+        .parrafoPrincipal {
+                text-align: justify;
+                background-color: transparent;;
+                width: 100%;
+                height: auto;
+                margin:0 auto;
+                font-size: 0.7rem;
+                margin-bottom: 2vh;
+     
+        }
+
+        .d-md-block {
+                display: block !important;
+              }
+
+
+
+
         .bt_transp {
                         width: 30%;
                         height: auto;
-                        margin: 0 15%;
+                        margin: 0 13%;
+                        font-size: 0.66rem;
                 }
         .bt_green {
                         width: 30%;
                         height: auto;
-                        margin: 0 4%;
+                        margin: 0 3%;
+                        font-size: 0.79rem;
                 }
         .bt_transp2 {
                         width: 30%;
@@ -438,20 +490,42 @@ footer :hover {
                         font-size: 0.9rem;
                 }
                 .contenidoPrincipal{
+                       /* width: 100%;
+                        text-align: justify;
+                        padding-bottom: 5%;
+                        margin-top: 15%;*/
+                        padding-right: 0%;
+                        padding-left: 10%;
                         width: 100%;
                         text-align: justify;
                         padding-bottom: 5%;
-                        margin-top: 15%;
+                        background-color: transparent;
                 }
+
+                .parrafoPrincipal {
+                        width:80%;
+                        background-color: transparent;
+                        text-align: justify;
+                        margin-left:10%;
+                        margin-right: 10%;
+                        height: auto;
+        
+        }
+
+
                 .contenidoPrincipal h2{ 
                         text-align: center;
-                        padding-left: 10%;
+
                 }
                 .bt_transp {
                         margin: 0 20%;
+                        font-size: 0.75rem;
+                        height: auto;
                 }
                 .bt_green {
                         margin: 0 1%;
+                        font-size: 0.8rem;
+                        height: auto;
                 }
                 .navbar-nav {
                         text-align: center;
