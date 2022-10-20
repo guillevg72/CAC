@@ -27,5 +27,77 @@
             </nav>
         </div>
     </header> 
+<section class="tickets">
+    <div class="estudiantes">
+        <h4> Estudiante</h4>
+        <p>Tienen un descuento</p>
+        <br>
+        <p><b>80%</b></p>
+        <p>* presentar documentación</p>
+
+    </div>
+    <div class="trainee">
+        <h4> Trainee</h4>
+        <p>Tienen un descuento</p>
+        <br>
+        <p><b>50%</b></p>
+        <p>* presentar documentación</p>
+    </div>
+    <div class="junior">
+        <h4> Junior</h4>
+        <p>Tienen un descuento</p>
+        <br>
+        <p><b>15%</b></p>
+        <p>* presentar documentación</p>
+    </div>
+</section>
+<section class="buy_form">
+        <p>VENTA</p>
+        <h2>VALOR DE TICKET $200</h2>
+        <br>
+        <div class="form_items">
+            <form action="">
+                <input class="form_items" id="name" type="text" placeholder="Nombre" required> 
+                <input class="form_items" id="surname" type="text" placeholder="Apellido" required> 
+                <input class="form_items" id="email" type="text" placeholder="Correo" required> 
+                <br>
+                <div class="form_text">
+                    <p class="text_cant">Cantidad</p>
+                    <p class="text_cat">Categoria</p>
+
+                </div>
+                <input class="form_items" id="cantidad" type="number" min="1" max="10" placeholder="Cantidad" required> 
+                <select class="form_items" id="categoria"  name="categoria" required>
+                    <option value=1>Estudiante
+                    <option value=2>Trainee
+                    <option value=3>Junior
+                </select> 
+            <br>
+            <div class="resumen">Total a pagar: $ <span id="resultado"></span></div>
+            <div>
+                    <button class="form_items" type="reset" id="bt_borrar"> Borrar</button>
+                    <button onclick="calCosto()" class="form_items" type="button" id="bt_resumen">Resumen</button>
+            </div>
+        </div>
+
+        <br>
+
+</section>
+
+    <footer class="navbar navbar-expand-lg"><!-- Hecho aplicando Boostrap-->
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                 <a class="navbar-brand" href=""><span class="col_white">Preguntas frecuentes</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Contáctanos</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Prensa</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Conferencias</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Terminos y condiciones</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Privacidad</span></a>
+                <a class="navbar-brand" href=""><span class="col_white">Estudiantes</span></a>
+            </div>
+        </div>
+</footer>
+<script src="../JS/bootstrap.bundle.js"></script>
+<script src="../JS/scripts.js"></script>
 </body>
 </html>
