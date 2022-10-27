@@ -1,26 +1,41 @@
-let costo=0;
+/* function validateEmail(){
+    var emailField = document.getElementById('user-email');
+	var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+	if( validEmail.test(emailField.value) ){
+		alert('Email is valid, continue with form submission');
+		return true;
+	}else{
+		alert('Email is invalid, skip form submission');
+		return false;
+	}
+} */
 
 function calCosto(){
+    let costo=0;
     let total=0;
     let cantidad = parseInt(document.getElementById("cantidad").value);
     let categoria = document.getElementById("categoria").value;
     let varname = document.getElementById("name").value;
     let varsurname = document.getElementById("surname").value;
     let varemail = document.getElementById("email").value;
+    let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
     if(varname==""){
         alert("Ingrese su nombre");
-        return;
+       return;
     }
     if(varsurname==""){
         alert("Ingrese su apellido");
-        return;
+       return;
     }
-    if(varemail==""){
-        alert("Ingrese su email");
+    
+    if( !validEmail.test(varemail) ){ 
+        alert('Ingrese un email valido');
         return;
-    }        
-     
+	}
+
+
+    
     if(isNaN(cantidad)){
         alert("Ingrese una cantidad valida de Tickets");
         return;
