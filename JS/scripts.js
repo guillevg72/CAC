@@ -1,4 +1,4 @@
-function calCosto(){
+bt_resumen.addEventListener('click',function calCosto(){
     let costo=0;
     let total=0;
     let cantidad = parseInt(document.getElementById("cantidad").value);
@@ -53,5 +53,8 @@ function calCosto(){
     console.log(categoria);
    
 }
-
+)
+bt_borrar.addEventListener('click', function(){
+    resultado=0
+})
 
