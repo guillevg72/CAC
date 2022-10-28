@@ -1,23 +1,23 @@
-    bt_resumen.addEventListener('click',function calCosto(){
-    let ticket=200;
-    let costo=0;
-    let total=0;
-    let cantidad = parseInt(document.getElementById("cantidad").value);
-    let categoria = document.getElementById("categoria").value;
-    let name = document.getElementById("name").value;
-    let surname = document.getElementById("surname").value;
-    let email = document.getElementById("email").value;
-    let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+bt_resumen.addEventListener('click',function calCosto(){
+        let ticket=200;
+        let costo=0;
+        let total=0;
+        let cantidad = parseInt(document.getElementById("cantidad").value);
+        let categoria = document.getElementById("categoria").value;
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let email = document.getElementById("email").value;
+        let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+        let errorColor = "#0000FF";
 
     if(name==""){
         alert("Ingrese su nombre");
-        name.classList.add("is-invalid");
-        name.focus();
-       return;
+        buy_form.style.backgroundColor=errorColor;
+        return;
     }
     if(surname==""){
         alert("Ingrese su apellido");
-       return;
+        return;
     }
     
     if( !validEmail.test(email) ){ 
@@ -55,7 +55,7 @@
    
 }
 )
-bt_borrar.addEventListener('click', function(){
-    resultado=0
-})
+    bt_borrar.addEventListener('click', function(){
+    document.getElementById('resultado').innerHTML = ""
+    })
 
