@@ -4,24 +4,28 @@ bt_resumen.addEventListener('click',function calCosto(){
         let total=0;
         let cantidad = parseInt(document.getElementById("cantidad").value);
         let categoria = document.getElementById("categoria").value;
-        let name = document.getElementById("name").value;
-        let surname = document.getElementById("surname").value;
-        let email = document.getElementById("email").value;
+        let name = document.getElementById("name");
+        let surname = document.getElementById("surname");
+        let email = document.getElementById("email");
         let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-        let errorColor = "#0000FF";
 
-    if(name==""){
+    if(name.value==""){
         alert("Ingrese su nombre");
-        buy_form.style.backgroundColor=errorColor;
+        name.classList.add("is-invalid");
+        name.focus();
         return;
     }
-    if(surname==""){
+    if(surname.value==""){
         alert("Ingrese su apellido");
+       surname.classList.add('is-invalid');
+        surname.focus();
         return;
     }
     
-    if( !validEmail.test(email) ){ 
+    if( !validEmail.test(email.value) ){ 
         alert('Ingrese un email valido');
+       email.classList.add('is-invalid');
+        email.focus();
         return;
 	}
 
@@ -49,6 +53,9 @@ bt_resumen.addEventListener('click',function calCosto(){
     
     
     document.getElementById('resultado').innerHTML = costo
+    console.log(name.value);
+    console.log(surname.value);
+    console.log(email.value);
     console.log(costo);
     console.log(cantidad);
     console.log(categoria);

@@ -404,7 +404,7 @@ footer :hover {
         padding-bottom: 1%;
         padding-left: 1%;
         margin-right: 1%;
-        border: 1px solid #979797;
+        border: 1px solid #979797; 
         border-radius: 5px;
 }
 #surname,#categoria {
@@ -414,7 +414,7 @@ footer :hover {
         padding-bottom: 1%;
         padding-left: 1%;
         margin-left: 1%;
-        border: 1px solid #979797;
+        border: 1px solid #979797 ;
         border-radius: 5px;
 }
 #email {
@@ -424,11 +424,12 @@ footer :hover {
         padding-bottom: 1%;
         padding-left: 1%;
         width: 100%;
-        border: 1px solid #979797 ;
+        border-radius: 2px;
+        border: 1px solid #979797 ; 
         border-radius: 5px;
 }
-#name:hover,#surname:hover,#email:hover{
-        background-color: rgb(212, 241, 232);
+#name:hover,#surname:hover,#email:hover,#cantidad:hover,#categoria:hover{
+        background-color: rgb(166, 241, 217);
 }
 
 .form_text{
